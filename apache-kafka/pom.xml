@@ -6,11 +6,8 @@
     <artifactId>apache-kafka</artifactId>
     <name>apache-kafka</name>
 
-    <parent>
-        <groupId>com.baeldung</groupId>
-        <artifactId>parent-modules</artifactId>
+        <groupId>com.xsourcing</groupId>
         <version>1.0.0-SNAPSHOT</version>
-    </parent>
 
     <dependencies>
         <dependency>
@@ -181,6 +178,17 @@
     </build>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <org.slf4j.version>1.7.32</org.slf4j.version>
+        <guava.version>32.1.2-jre</guava.version>
+        <jackson.version>2.15.2</jackson.version>
+        <lombok.version>1.18.28</lombok.version>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+
         <kafka.version>3.4.0</kafka.version>
         <testcontainers-kafka.version>1.15.3</testcontainers-kafka.version>
         <testcontainers-jupiter.version>1.15.3</testcontainers-jupiter.version>
